@@ -1,0 +1,15 @@
+@import "../../../variables/StyleVariables/StyleVariables.scss";
+
+.filterListWrap {
+	display: block;
+	position: relative;
+	margin-right: 10px;
+	width: 22.3%;
+	height: 100%;
+	background-color: $paletteDeskPrimary;
+	transition: bottom .8s;
+
+	&.open {
+		bottom: 0;
+	}
+}

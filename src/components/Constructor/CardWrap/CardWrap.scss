@@ -1,0 +1,10 @@
+@import "../../../variables/StyleVariables/StyleVariables.scss";
+
+.cardWrap {
+	display: block;
+	width: 100%;
+	height: calc(100% - 164px);
+	background-color: $paletteDeskPrimary;
+	box-shadow: 10px 10px 10px rgba(1, 1, 1, 1) inset; 
+	overflow-y: scroll;
+}

@@ -1,0 +1,20 @@
+.filterBlock__buttonBg {
+	@mixin sideFilterIcon($family, $nameIcon, $extension) {
+		&._#{$nameIcon} {
+			background-image: url('../../../../img/icons/#{$family}/#{$nameIcon}.#{$extension}');
+		}
+	}
+
+	&._usual,
+	&._rare,
+	&._epic,
+	&._legendary,
+	&._gold,
+	&._bronze {
+		background-size: 50%;
+	}
+	@include sideFilterIcon('cost', 'usual', 'jpg');
+	@include sideFilterIcon('cost', 'rare', 'jpg');
+	@include sideFilterIcon('cost', 'epic', 'jpg');
+	@include sideFilterIcon('cost', 'legendary', 'jpg');
+}

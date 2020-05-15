@@ -1,0 +1,418 @@
+@import "../../variables/StyleExtends/StyleExtends.scss";
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+::-webkit-scrollbar {
+	width: 0;
+}
+@font-face {
+	font-family: Gwent;
+	src: url("../../fonts/gwent.ttf") format("truetype");
+}
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+video {
+	border-radius: 5px;
+}
+
+body {
+	overflow: hidden;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	@extend %coverBg;
+	background-image: url(../../img/wrapElements/bg.jpg);
+}
+
+.contentWrap {
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+	overflow-y: scroll;
+}
+
+.preloader__clockWrap:after,
+.filterListWrap:after,
+.deckListWrap:after,
+.frontBlock:after,
+.popupFilter:after,
+.popupFilter__buttonBlock:after,
+.cardListWrap:after,
+.cardListWrap__filterBlock:after,
+.filterBlock__textFilterWrap:after,
+.filterBlock__provBlock:after,
+.filterBlock__popup:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9;
+	border-width: 12px;
+	border-style: solid;
+	border-image-source: url(../../img/wrapElements/frame.png);
+	border-image-slice: 12;
+	border-image-outset: 0;
+	border-image-repeat: round;
+	pointer-events: none;
+}
+.popupFilter__buttonBlock:after,
+.filterBlock__textFilterWrap:after,
+.filterBlock__provBlock:after {
+	border-width: 8px;
+}
+
+@media screen and (max-width: 1815px) {
+	.frontBlock {
+		height: 48px;
+
+		&__name {
+			font-size: 18px;
+			line-height: 1.3;
+		}
+		&__icon {
+			margin-right: 20px;
+			width: 30px;
+		}
+		&__icon {
+			&._cost {
+				background-size: 70%;
+			}
+		}
+		&__toogle {
+			width: 30px;
+		}
+	}
+	
+	.popupFilter__buttonBlock {
+		width: 42px;
+		height: 42px;
+		margin-top: 10px;
+
+		&:last-child {
+			margin-bottom: 10px;
+		}
+	}
+
+	.deckSlot {
+		height: 48px;
+
+		&:hover {
+			background-position: 100% center, 65% center, center center, center center;
+		}
+	}
+
+	.ability {
+		width: 48px;
+		height: 48px;
+		top: 5px;
+		left: 2px;
+	}
+
+	.deckInfo {
+		top: 16px;
+		left: 56px;
+
+		&__name {
+			font-size: 14px;
+		}
+		&__ability {
+			font-size: 10px;
+		}
+	}
+
+	.filterListWrap:after,
+	.deckListWrap:after,
+	.frontBlock:after,
+	.popupFilter:after,
+	.popupFilter__buttonBlock:after,
+	.cardListWrap:after,
+	.cardListWrap__filterBlock:after,
+	.filterBlock__textFilterWrap:after,
+	.filterBlock__provBlock:after,
+	.filterBlock__popup:after {
+		border-width: 8px;
+	}
+}
+@media screen and (max-width: 1740px) {
+	.header {
+		display: none;
+	}
+	.constructor {
+		height: 89%;
+	}
+	.cardListWrap {
+		max-width: 850px;
+		min-width: 850px;
+	}
+	.filterListWrap,
+	.deckListWrap {
+		width: 24.3%;
+	}
+
+	.card {
+		&:nth-child(6n-1),
+		&:nth-child(6n) {
+			.tooltip {
+				left: auto;
+			}
+		}
+	}
+	.card {
+		&:nth-child(5n-1),
+		&:nth-child(5n) {
+			.tooltip {
+				left: -177px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1530px) {
+	.frontBlock {
+		height: 69px;
+
+		&__name {
+			font-size: 26px;
+			line-height: 1.5;
+		}
+		&__icon {
+			width: 35px;
+		}
+		&__icon {
+			&._cost {
+				background-size: 85%;
+			}
+		}
+		&__toogle {
+			width: 34px;
+		}
+	}
+
+	.popupFilter__buttonBlock {
+		width: 60px;
+		height: 60px;
+		margin-top: 15px;
+
+		&:last-child {
+			margin-bottom: 15px;
+		}
+	}
+
+	.cardListWrap {
+		max-width: 1014px;
+		min-width: 1014px;
+		margin-right: 0;
+	}
+	.filterListWrap {
+		width: 31%;
+	}
+	.deckListWrap {
+		display: none;
+	}
+
+	.cardListWrap__hinge {
+		&:nth-child(3) {
+			display: none;
+		}
+		&:nth-child(4) {
+			display: none;
+		}
+	}
+
+	.card {
+		&:nth-child(5n-1),
+		&:nth-child(5n) {
+			.tooltip {
+				left: auto;
+			}
+		}
+	}
+	.card {
+		&:nth-child(6n-1),
+		&:nth-child(6n) {
+			.tooltip {
+				left: -177px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1415px) {
+	.cardListWrap {
+		max-width: 850px;
+		min-width: 850px;
+	}
+	.filterListWrap {
+		width: 37.4%;
+	}
+
+	.card {
+		&:nth-child(6n-1),
+		&:nth-child(6n) {
+			.tooltip {
+				left: auto;
+			}
+		}
+	}
+	.card {
+		&:nth-child(5n-1),
+		&:nth-child(5n) {
+			.tooltip {
+				left: -177px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1240px) {
+	.preloader {
+		background: url('../../img/preloader/preloader1280x960.jpg') center no-repeat;
+		background-size: cover;
+	}
+	.constructor {
+		overflow: hidden;
+	}
+	.cardListWrap {
+		margin: 0 auto;
+		max-width: 1014px;
+		min-width: 1014px;
+	}
+	.filterListWrap {
+		position: fixed;
+		bottom: -100%;
+		left: 50%;
+		z-index: 9999;
+		max-width: 1014px;
+		min-width: 1014px;
+		height: calc(100% - 164px);
+		transform: translateX(-50%);
+	}
+	.frontBlock {
+		height: 48px;
+
+		&__name {
+			font-size: 18px;
+			line-height: 1.3;
+		}
+		&__icon {
+			margin-right: 20px;
+			width: 30px;
+		}
+		&__icon {
+			&._cost {
+				background-size: 70%;
+			}
+		}
+		&__toogle {
+			width: 30px;
+		}
+	}
+
+	.popupFilter__buttonBlock {
+		width: 42px;
+		height: 42px;
+		margin-top: 10px;
+
+		&:last-child {
+			margin-bottom: 10px;
+		}
+	}
+
+	.filterBlock__popup {
+		display: block;
+	}
+	.cardListWrap__hinge {
+		&:nth-child(1),
+		&:nth-child(2) {
+			display: none;
+		}
+	}
+
+	.card {
+		&:nth-child(5n-1),
+		&:nth-child(5n) {
+			.tooltip {
+				left: auto;
+			}
+		}
+	}
+	.card {
+		&:nth-child(6n-1),
+		&:nth-child(6n) {
+			.tooltip {
+				left: -177px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1048px) {
+	.cardListWrap {
+		max-width: 850px;
+		min-width: 850px;
+	}
+	.filterListWrap {
+		max-width: 850px;
+		min-width: 850px;
+	}
+	.card {
+		&:nth-child(6n-1),
+		&:nth-child(6n) {
+			.tooltip {
+				left: auto;
+			}
+		}
+	}
+	.card {
+		&:nth-child(5n-1),
+		&:nth-child(5n) {
+			.tooltip {
+				left: -177px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 880px) {
+	.preloader {
+		background: url('../../img/preloader/preloader800x480.jpg') center no-repeat;
+		background-size: cover;
+	}
+	.cardListWrap {
+		max-width: 686px;
+		min-width: 686px;
+	}
+	.filterListWrap {
+		max-width: 686px;
+		min-width: 686px;
+	}
+
+	.filterBlock__popup {
+		right: 20px;
+		width: 46px;
+		height: 46px;
+	}
+
+	.card {
+		&:nth-child(5n-1),
+		&:nth-child(5n) {
+			.tooltip {
+				left: auto;
+			}
+		}
+	}
+	.card {
+		&:nth-child(4n-1),
+		&:nth-child(4n) {
+			.tooltip {
+				left: -177px;
+			}
+		}
+	}
+}

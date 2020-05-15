@@ -1,0 +1,115 @@
+@import "../../../../variables/StyleVariables/StyleVariables.scss";
+@import "../../../../variables/StyleExtends/StyleExtends.scss";
+
+.deckSlot {
+	position: relative;
+	max-width: 95%;
+	height: 72px;
+	position: relative;
+	background-size: auto 100%, auto 100%, auto, contain;
+	margin-bottom: 20px;
+	background-repeat: no-repeat;
+	outline: none;
+	background-position: 100% center, 85% center, center center, center center;
+	cursor: pointer;
+	transition: background-position .3s;
+
+	&:before {
+		content: "";
+		position: absolute;
+		left: 0px;
+		width: calc(100%);
+		height: calc(100%);
+		border-image-slice: 4 4 fill;
+		border-image-outset: 0;
+		border-image-repeat: round;
+		border-image-source: url('../../../../img/deckElements/general/border.png');
+		border-width: 4px 4px;
+		border-style: solid;
+	}
+
+	&:hover {
+		background-position: 100% center, 80% center, center center, center center;
+	}
+}
+// ------ DECK BACKGROUND
+@mixin deckBg($faction, $nameBg) {
+	._#{$nameBg} {
+		background-image: url(../../../../img/deckElements/general/mask.png), url(../../../../img/deckElements/bg/#{$faction}/#{$nameBg}.jpg);
+	}
+}
+// --- MONSTERS
+@include deckBg('monsters', 'hillock');
+@include deckBg('monsters', 'orianna');
+@include deckBg('monsters', 'golyat');
+// --- NILFGAARD
+@include deckBg('nilfgaard', 'ffion');
+@include deckBg('nilfgaard', 'sweers');
+@include deckBg('nilfgaard', 'viperWitcher');
+// --- NORTHERN
+@include deckBg('northern', 'roche');
+@include deckBg('northern', 'odo');
+// --- SCOIATAEL
+@include deckBg('scoiatael', 'fauve');
+@include deckBg('scoiatael', 'feignDeath');
+@include deckBg('scoiatael', 'halfelf');
+// --- SKELLIGE
+@include deckBg('skellige', 'vildkaarl');
+@include deckBg('skellige', 'greatsword');
+// --- SYNDICATE
+@include deckBg('syndicate', 'passiflora');
+@include deckBg('syndicate', 'moreelse');
+
+.ability {
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	top: 7px;
+	left: 2px;
+	justify-content: center;
+	@extend %containBg;
+}
+// ------ ABILITY ICON
+@mixin abilityIcon($faction, $nameIcon) {
+	._#{$nameIcon} {
+		background-image: url('../../../../img/deckElements/ability/#{$faction}/#{$nameIcon}.png');
+	}
+}
+// --- MONSTERS
+@include abilityIcon('monsters', 'deathShadow');
+@include abilityIcon('monsters', 'bloodScent');
+@include abilityIcon('monsters', 'fruitsYsgith');
+// --- NILFGAARD
+@include abilityIcon('nilfgaard', 'imperialFormation');
+@include abilityIcon('nilfgaard', 'enslave');
+@include abilityIcon('nilfgaard', 'strategicWithdrawal');
+// --- NORTHERN
+@include abilityIcon('northern', 'pincerManeuver');
+@include abilityIcon('northern', 'uprising');
+// --- SCOIATAEL
+@include abilityIcon('scoiatael', 'mysticEcho');
+@include abilityIcon('scoiatael', 'deadeyeAmbush');
+@include abilityIcon('scoiatael', 'precisionStrike');
+// --- SKELLIGE
+@include abilityIcon('skellige', 'ursineRitual');
+@include abilityIcon('skellige', 'secondWind');
+// --- SYNDICATE
+@include abilityIcon('syndicate', 'hiddenCache');
+@include abilityIcon('syndicate', 'wildCard');
+
+.deckInfo {
+	position: absolute;
+	top: 22px;
+	left: 80px;
+
+	&__name {
+		font-family: Gwent;
+		font-size: 20px;
+		text-transform: uppercase;
+		color: $paletteParagraph;
+	}
+	&__ability {
+		font-size: 14px;
+		color: $paletteParagraph;
+	}
+}

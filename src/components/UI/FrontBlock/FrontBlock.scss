@@ -1,0 +1,58 @@
+@import "../../../variables/StyleVariables/StyleVariables.scss";
+@import "../../../variables/StyleExtends/StyleExtends.scss";
+
+.frontBlock {
+	position: relative;
+	padding: 10px 25px;
+	width: 100%;
+	height: 69px;
+	background-color: $paletteSideMenu;
+	cursor: pointer;
+
+	&__infoWrap {
+		width: 100%;
+		height: 100%;
+	}
+	&__icon {
+		display: block;
+		float: left;
+		margin-right: 20px;
+		width: 35px;
+		height: 100%;
+		@extend %containBg;
+
+		&._faction {
+			background-image: url('../../../img/icons/menu/faction.png');
+		}
+		&._cost {
+			background-size: 85%;
+			background-image: url('../../../img/icons/menu/cost.jpg');
+		}
+		&._type {
+			background-image: url('../../../img/icons/menu/type.png');
+		}
+		&._color {
+			background-image: url('../../../img/icons/menu/border.png');
+		}
+	}
+	&__nameWrap {
+		display: block;
+		float: left;
+		height: 100%;
+	}
+	&__name {
+		font-family: Gwent;
+		font-size: 26px;
+		text-transform: uppercase;
+		line-height: 1.5;
+		color: $paletteSandPrimary;
+	}
+	&__toogle {
+		display: block;
+		float: right;
+		width: 34px;
+		height: 100%;
+		background-image: url('../../../img/icons/menu/toogle.png');
+		@extend %containBg;
+	}
+}

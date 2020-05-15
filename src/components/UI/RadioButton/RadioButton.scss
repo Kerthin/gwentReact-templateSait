@@ -1,0 +1,44 @@
+@import "../../../variables/StyleVariables/StyleVariables.scss";
+@import "../../../variables/StyleExtends/StyleExtends.scss";
+
+.popupFilter {
+	&__buttonBlock {
+		position: relative;
+		display: block;
+		float: left;
+		width: 60px;
+		height: 60px;
+		margin-top: 15px;
+		margin-left: 10px;
+		cursor: pointer;
+
+		&:hover  {
+			.filterBlock__buttonBg {
+				background-color: $paletteSandPrimary;
+			}
+		}
+
+		&:last-child {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__filter {
+		display: none;
+
+		&:checked {
+			+ .filterBlock__buttonBg {
+				background-color: $paletteSandPrimary;
+			}
+		}
+	}
+}
+.filterBlock__buttonBg {
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: 85%;
+	background-repeat: no-repeat;
+	background-image: url('../../../img/icons/faction/all.png');
+	background-color: $paletteButton;
+}

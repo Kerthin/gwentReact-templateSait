@@ -1,0 +1,55 @@
+@import "../../../variables/StyleVariables/StyleVariables.scss";
+
+.filterBlock {
+	&__provBlock {
+		position: relative;
+		display: block;
+		float: left;
+		margin-right: 8px;
+		width: 60px;
+		height: 60px;
+		cursor: pointer;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&:hover {
+			.filterBlock__provSquare {
+				background-color: $paletteSandPrimary;
+			}
+			.filterBlock__provNumber {
+				color: $paletteButton;
+			}
+		}
+	}
+
+	&__provFilter {
+		display: none;
+
+		&:checked {
+			+ .filterBlock__provSquare {
+				background-color: $paletteSandPrimary;
+
+				.filterBlock__provNumber {
+					color: $paletteButton;
+				}
+			}
+		}
+	}
+
+	&__provSquare {
+		width: 100%;
+		height: 100%;
+		background-color: $paletteButton;
+	}
+
+	&__provNumber {
+		font-family: Gwent;
+		font-size: 36px;
+		color: $paletteSandPrimary;
+		text-align: center;
+		line-height: 1.7;
+		text-shadow: rgb(0, 0, 0) 0px 2px 5px;
+	}
+}

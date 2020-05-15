@@ -1,0 +1,9 @@
+@import "../../../variables/StyleVariables/StyleVariables.scss";
+
+.deckListWrap {
+	display: block;
+	position: relative;
+	min-width: 22.3%;
+	height: 100%;
+	background-color: $paletteDeskPrimary;
+}

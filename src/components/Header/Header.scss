@@ -1,0 +1,106 @@
+@import "../../variables/StyleVariables/StyleVariables.scss";
+@import "../../variables/StyleExtends/StyleExtends.scss";
+
+.header {
+	position: absolute;
+	top: 1.5%;
+	left: 50%;
+	width: 97%;
+	height: 9%;
+	transform: translateX(-50%);
+}
+
+.playerDetails {
+	position: relative;
+	margin-right: 10px;
+	width: 22.3%;
+	height: 100%;
+}
+.avatarWrap {
+	position: relative;
+	display: block;
+	float: left;
+	float: left;
+	width: 100px;
+	height: 100%;
+
+	&__avatar {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 50px;
+		height: 50px;
+		transform: translate(-50%, -50%);
+		@extend %coverBg;
+		background-image: url(../../img/header/playerDetails/foltest.png);
+		z-index: 1;
+	}
+
+	&__border {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-position: center;
+		background-size: 140%;
+		background-repeat: no-repeat;
+		background-image: url(../../img/header/playerDetails/border.png);
+		z-index: 2;
+	}
+}
+
+
+
+.playerInfoWrap {
+	position: relative;
+	height: 100%;
+	width: 55%;
+	display: block;
+	float: left;
+}
+
+.playerInfo {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+
+	&__name {
+		margin-bottom: 10px;
+		font-family: Gwent;
+		font-size: 24px;
+		color: $paletteHeaderTextPrimary;
+	}
+
+	&__title {
+		font-family: sans-serif;
+		font-size: 16px;
+		font-weight: 600;
+		color: $paletteSandPrimary;
+	}
+}
+
+.prestigeWrap {
+	position: relative;
+	display: block;
+	float: left;
+	height: 100%;
+	width: 55px;
+}
+
+.prestige {
+	position: absolute;
+	top: 50%;
+	width: 55px;
+	height: 55px;
+	@extend %coverBg;
+	background-image: url(../../img/header/playerDetails/prestige.png);
+	transform: translateY(-50%);
+
+	&__number {
+		font-family: Gwent;
+		font-size: 28px;
+		color: $paletteHeaderTextPrimary;
+		text-align: center;
+		line-height: 1.6;
+		text-shadow: rgb(0, 0, 0) 0px 2px 5px;
+	}
+}

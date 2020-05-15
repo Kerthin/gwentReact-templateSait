@@ -1,0 +1,12 @@
+.filterBlock__buttonBg {
+	@mixin sideFilterIcon($family, $nameIcon, $extension) {
+		&._#{$nameIcon} {
+			background-image: url('../../../../img/icons/#{$family}/#{$nameIcon}.#{$extension}');
+		}
+	}
+
+	@include sideFilterIcon('type', 'unit', 'png');
+	@include sideFilterIcon('type', 'special', 'png');
+	@include sideFilterIcon('type', 'artifact', 'png');
+	@include sideFilterIcon('type', 'strategy', 'png');
+}

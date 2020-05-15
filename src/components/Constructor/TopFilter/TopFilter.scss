@@ -1,0 +1,36 @@
+@import "../../../variables/StyleVariables/StyleVariables.scss";
+
+.cardListWrap {
+	&__filterBlock {
+		position: relative;
+		padding-top: 20px;
+		width: 100%;
+		height: 164px;
+		background-color: $paletteDeskPrimary;
+	}
+}
+
+.filterBlock__popup {
+	display: none;
+	position: absolute;
+	right: 30px;
+	width: 86px;
+	height: 86px;
+	background-color: $paletteButton;
+	cursor: pointer;
+	background-position: center;
+	background-size: 75%;
+	background-repeat: no-repeat;
+	background-image: url('../../../img/icons/topFilter/popup.png');
+
+	&.open {
+		background-color: $paletteSandPrimary;
+	}
+}
+
+.filterBlock {
+	position: relative;
+	margin: 0 auto;
+	width: 536px;
+	height: 118px;
+}

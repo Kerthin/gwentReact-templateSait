@@ -1,0 +1,23 @@
+@import "../../../../variables/StyleVariables/StyleVariables.scss";
+
+.filterBlock {
+	&__textFilterWrap {
+		position: relative;
+		width: 100%;
+		height: 46px;
+	}
+
+	&__textFilter {
+		position: relative;
+		padding-top: 2px;
+		padding-left: 15px;
+		width: 100%;
+		height: 100%;
+		font-family: Gwent;
+		font-size: 22px;
+		color: $paletteSearchText;
+		outline: 0;
+		background-color: $paletteSearchBg;
+		cursor: text;
+	}
+}

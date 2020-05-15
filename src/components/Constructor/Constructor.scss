@@ -1,0 +1,47 @@
+@import "../../variables/StyleExtends/StyleExtends.scss";
+
+.constructor {
+	display: flex;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	max-width: 1862px;
+	width: 97%;
+	height: 79%;
+	transform: translate(-50%, -50%);
+}
+
+.cardListWrap {
+	display: block;
+	position: relative;
+	max-width: 1014px;
+	min-width: 1014px;
+	margin-right: 10px;
+	height: 100%;
+
+	&__hinge {
+		position: absolute;
+		width: 30px;
+		height: 108px;
+		background-image: url(../../img/wrapElements/hinge.png);
+		@extend %containBg;
+		z-index: 10;
+
+		&:nth-child(1) {
+			top: 104px;
+			left: -20px;
+		}
+		&:nth-child(2) {
+			bottom: 104px;
+			left: -20px;
+		}
+		&:nth-child(3) {
+			top: 104px;
+			right: -20px;
+		}
+		&:nth-child(4) {
+			bottom: 104px;
+			right: -20px;
+		}
+	}
+}

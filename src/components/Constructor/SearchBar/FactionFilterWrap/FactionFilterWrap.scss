@@ -1,0 +1,52 @@
+@import "../../../../variables/StyleVariables/StyleVariables.scss";
+
+.sideFilterWrap {
+	position: relative;
+	display: block;
+	margin-bottom: 15px;
+	width: 95%;
+}
+.openFilter {
+	display: none;
+
+	&:checked {
+		+ .frontBlock {
+			.frontBlock__toogle {
+				transform: rotate(180deg);
+			}
+		}
+	}
+	&:checked {
+		+ .frontBlock {
+			+ .popupFilter {
+				max-height: 1000px;
+			}
+		}
+	}
+}
+
+.popupFilter {
+	position: relative;
+	display: block;
+	width: 100%;
+	max-height: 0;
+	background-color: $palettePopup;
+	overflow: hidden;
+	transition: max-height .5s;
+}
+
+.filterBlock__buttonBg {
+	@mixin sideFilterIcon($family, $nameIcon, $extension) {
+		&._#{$nameIcon} {
+			background-image: url('../../../../img/icons/#{$family}/#{$nameIcon}.#{$extension}');
+		}
+	}
+
+	@include sideFilterIcon('faction', 'neutral', 'png');
+	@include sideFilterIcon('faction', 'monsters', 'png');
+	@include sideFilterIcon('faction', 'nilfgaard', 'png');
+	@include sideFilterIcon('faction', 'northern', 'png');
+	@include sideFilterIcon('faction', 'scoiatael', 'png');
+	@include sideFilterIcon('faction', 'skellige', 'png');
+	@include sideFilterIcon('faction', 'syndicate', 'png');
+}

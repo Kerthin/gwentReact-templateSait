@@ -1,0 +1,210 @@
+@import "../../../../variables/StyleVariables/StyleVariables.scss";
+@import "../../../../variables/StyleExtends/StyleExtends.scss";
+
+.card {
+	position: relative;
+	float: left;
+	width: 134px;
+	height: 194px;
+	margin-left: 30px;
+	margin-top: 30px;
+	cursor: pointer;
+	transition: all .3s;
+
+	video {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+
+	&._bronze .borderBg {
+		background-image: url('../../../../img/cardElements/border/borderBronze.png');
+	}
+	&._gold .borderBg {
+		background-image: url('../../../../img/cardElements/border/borderGold.png');
+	}
+
+	@mixin cardFactionElements($faction) {
+		&._#{$faction} {
+			.strengthBg {
+				background-image: url('../../../../img/cardElements/#{$faction}/strength.png');
+			}
+			.provisionBg {
+				background-image: url('../../../../img/cardElements/#{$faction}/provision.png');
+			}
+			.tooltip__titleWrap {
+				background-image: url('../../../../img/cardElements/#{$faction}/tooltip.jpg');
+			}
+		}
+	}
+
+	@include cardFactionElements('neutral');
+	@include cardFactionElements('monsters');
+	@include cardFactionElements('nilfgaard');
+	@include cardFactionElements('northern');
+	@include cardFactionElements('scoiatael');
+	@include cardFactionElements('skellige');
+	@include cardFactionElements('syndicate');
+
+	&:hover {
+		transform: scale(1.1);
+		z-index: 5;
+
+		.tooltip {
+			display: block;
+		}
+		.tooltip {
+			&:hover {
+				display: none;
+			}
+		}
+	}
+
+	&:last-child {
+		margin-bottom: 20px;
+	}
+
+	&:nth-child(6n-1),
+	&:nth-child(6n) {
+		.tooltip {
+			left: -177px;
+		}
+	}
+}
+.borderBg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.strengthBg {
+	position: absolute;
+	width: 43px;
+	height: 43px;
+	@extend %containBg;
+
+	&__special,
+	&__artifact,
+	&__strategy,
+	&__number {
+		@extend %containBg;
+	}
+
+	@mixin cardTypeIcon($type, $mTop, $mLeft, $width, $height) {
+		&__#{$type} {
+			margin-top: #{$mTop}px;
+			margin-left: #{$mLeft}px;
+			width: #{$width}px;
+			height: #{$height}px;
+			background-image: url('../../../../img/cardElements/type/#{$type}.png');
+		}
+	}
+
+	@include cardTypeIcon('special', '5', '4', '32', '32');
+	@include cardTypeIcon('artifact', '7', '6', '30', '30');
+	@include cardTypeIcon('strategy', '8', '8', '25', '25');
+
+	&__number {
+		font-family: Gwent;
+		font-size: 28px;
+		color: $paletteStrength;
+		text-align: center;
+		line-height: 1.6;
+		text-shadow: rgb(0, 0, 0) 0px 2px 5px;
+	}
+
+	@mixin cardGemIcon($cost) {
+		&._#{$cost} {
+			&:after {
+				background-image: url('../../../../img/cardElements/gem/#{$cost}.png');
+			}
+		}
+	}
+
+	@include cardGemIcon('usual');
+	@include cardGemIcon('rare');
+	@include cardGemIcon('epic');
+	@include cardGemIcon('legendary');
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: 7px;
+		left: 6px;
+		width: 7px;
+		height: 7px;
+		@extend %containBg;
+	}
+}
+
+.provisionBg {
+	position: absolute;
+	width: 26px;
+	height: 54px;
+	bottom: 4px;
+	right: 4px;
+	@extend %containBg;
+
+	&__number {
+		font-family: Gwent;
+		font-size: 24px;
+		color: $paletteSandPrimary;
+		text-align: center;
+		line-height: 3.3;
+		text-shadow: rgb(0, 0, 0) 0px 2px 5px;
+	}
+}
+
+.tooltip {
+	position: absolute;
+	top: 2px;
+	right: -177px;
+	width: 177px;
+	display: none;
+	transition: all .3s;
+
+	&__titleWrap {
+		position: relative;
+		padding-top: 3px;
+		width: 100%;
+		height: 56px;
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+	&__title {
+		margin-top: 10px;
+		font-family: Gwent;
+		font-size: 17px;
+		text-transform: uppercase;
+		color: $paletteParagraph;
+		text-align: center;
+		text-shadow: rgb(0, 0, 0) 0px 2px 5px;
+	}
+
+	&__infoWrap {
+		background-image: url(../../../../img/cardElements/tooltipInfo/bottom.png), url(../../../../img/cardElements/tooltipInfo/center.jpg);
+		background-size: 100%;
+		border-bottom-left-radius: 8px;
+		border-bottom-right-radius: 8px;
+		padding-bottom: 10px;
+		background-repeat: no-repeat, repeat-y;
+		background-position: center bottom;
+	}
+
+	&__info {
+		margin-bottom: 6px;
+		position: relative;
+		word-break: break-word;
+		padding: 8px 12px 14px;
+
+		p {
+			font-size: 14px;
+			color: $paletteTooltioParagraph;
+			line-height: 16px;
+			font-family: sans-serif;
+		}
+		span {
+			font-weight: 600;
+			color: $paletteTooltioKeyword;
+		}
+	}
+}

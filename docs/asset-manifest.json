@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0a88055a.chunk.css",
+    "main.js": "/static/js/main.92a86654.chunk.js",
+    "main.js.map": "/static/js/main.92a86654.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2a5618fb.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2a5618fb.js.map",
+    "static/js/2.3241f22d.chunk.js": "/static/js/2.3241f22d.chunk.js",
+    "static/js/2.3241f22d.chunk.js.map": "/static/js/2.3241f22d.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.a5432a4a318a6ab5047d6b0b29fbf454.js": "/precache-manifest.a5432a4a318a6ab5047d6b0b29fbf454.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.0a88055a.chunk.css.map": "/static/css/main.0a88055a.chunk.css.map",
+    "static/js/2.3241f22d.chunk.js.LICENSE.txt": "/static/js/2.3241f22d.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/static/media/preloader800x480.7462a59a.jpg",
+    "static/media/DeckItem.scss": "/static/media/wildCard.82f61d3e.png",
+    "static/media/Header.scss": "/static/media/foltest.10d6b448.png",
+    "static/media/FrontBlock.scss": "/static/media/border.691f3752.png",
+    "static/media/Card.scss": "/static/media/strategy.f82b2a91.png",
+    "static/media/Preloader.scss": "/static/media/preloader1920x1200.9bc4d284.jpg",
+    "static/media/RadioButtonProvStart.scss": "/static/media/provision.fb88f108.png",
+    "static/media/TypeFilterWrap.scss": "/static/media/special.8f1729c3.png",
+    "static/media/FactionFilterWrap.scss": "/static/media/syndicate.7f18ba8a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2a5618fb.js",
+    "static/js/2.3241f22d.chunk.js",
+    "static/css/main.0a88055a.chunk.css",
+    "static/js/main.92a86654.chunk.js"
+  ]
+}
