@@ -111,26 +111,26 @@ The image of the website:
 
 #### Desktop
 
-	- Full screen
-	<a href="#"><img src="READMEimage/screenImage/fullScreen.png" /></a>
+  - Full screen
+  <a href="#"><img src="READMEimage/screenImage/fullScreen.png" /></a>
 
-	- Screen less then 1815 px
-	<a href="#"><img src="READMEimage/screenImage/1815px.png" /></a>
+  - Screen less then 1815 px
+  <a href="#"><img src="READMEimage/screenImage/1815px.png" /></a>
 
-	- Screen less then 1740 px
-	<a href="#"><img src="READMEimage/screenImage/1740px.png" /></a>
+  - Screen less then 1740 px
+  <a href="#"><img src="READMEimage/screenImage/1740px.png" /></a>
 
-	- Screen less then 1530 px
-	<a href="#"><img src="READMEimage/screenImage/1530px.png" /></a>
+  - Screen less then 1530 px
+  <a href="#"><img src="READMEimage/screenImage/1530px.png" /></a>
 
-	- Screen less then 1415 px
-	<a href="#"><img src="READMEimage/screenImage/1415px.png" /></a>
+  - Screen less then 1415 px
+  <a href="#"><img src="READMEimage/screenImage/1415px.png" /></a>
 
-	- Screen less then 1240 px
-	<a href="#"><img src="READMEimage/screenImage/1240px.png" /></a>
+  - Screen less then 1240 px
+  <a href="#"><img src="READMEimage/screenImage/1240px.png" /></a>
 
-	- Screen less then 1048 px
-	<a href="#"><img src="READMEimage/screenImage/1048px.png" /></a>
+  - Screen less then 1048 px
+  <a href="#"><img src="READMEimage/screenImage/1048px.png" /></a>
 
-	- Screen less then 880 px
-	<a href="#"><img src="READMEimage/screenImage/880px.png" /></a>
+  - Screen less then 880 px
+  <a href="#"><img src="READMEimage/screenImage/880px.png" /></a>
