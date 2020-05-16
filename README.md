@@ -97,16 +97,16 @@ The image of the website:
 
 #### Gif
 
-  - Card hover
+  - Card hover <br>
   <a href="#"><img src="READMEimage/gif/cardHover.gif" /></a>
 
-  - Filter Provision
+  - Filter Provision <br>
   <a href="#"><img src="READMEimage/gif/filterProv.gif" /></a>
 
-  - Text Filter
+  - Text Filter <br>
   <a href="#"><img src="READMEimage/gif/textFilter.gif" /></a>
 
-  - Filtering cards by properties
+  - Filtering cards by properties <br>
   <a href="#"><img src="READMEimage/gif/leftFilterSide.gif" /></a>
 
 #### Desktop
