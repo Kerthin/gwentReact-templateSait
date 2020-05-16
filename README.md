@@ -1,68 +1,136 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center"><a href="#" target="_blank" rel="noopener noreferrer"><img width="100" src="READMEimage/squirrelAppIcon.png" alt="Kerthin logo"></a></p>
 
-## Available Scripts
+<p align="center">
+  <a href="#"><img src="https://img.shields.io/badge/build-passing-brightgreen.svg" alt="Build Status"></a>
+  <a href="#"><img src="https://img.shields.io/badge/npm-v6.14.4-blue.svg" alt="Version"></a>
+  <a href="#"><img src="https://img.shields.io/badge/node-v10.16.0-blue.svg" alt="Version"></a> <br>
+  <a href="#"><img src="https://img.shields.io/badge/repo%20size-742.5%20MB-green.svg" alt="Size"></a>
+  <a href="#"><img src="https://img.shields.io/badge/project%20version-v0.8-blue.svg" alt="Version"></a>
+</p>
 
-In the project directory, you can run:
+<h2 align="center">Description</h2>
 
-### `npm start`
+In this template, you can see a large list of different cards, each of which has its own personal characteristics (provisions, stats, fraction, bonus, name, description, image). Thanks to internal filters, you can manage this list of cards.
+- To launch the app:
+  - download the repository;
+  - log in to the downloaded repository using the command line or terminal;
+  - enter the command line 'npm run start' or 'serve-s build' and go to the address specified in the terminal.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* Note that the project was made using the CREATE REACT APP.
+* Also, the app is very loaded (due to the abundance of media files), so it is not recommended for zapupsku on mobile devices, although the site is adapted to small tablet screens.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- I would like to note that this is just a test project that does not claim anything. I made it solely out of personal interest.
 
-### `npm test`
+#### Use technology.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The following technologies were used to create this project:
 
-### `npm run build`
+<h3 align="center">Software platform</h3>
+<!--Software platform start-->
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p align="center">
+  <a href="#">
+    <img width="260px" src="READMEimage/technology/nodejs-1.svg">
+  </a>
+</p>
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+<h3 align="center">Preprocessors</h3>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!--Preprocessors start-->
+<p align="center">
+  <a href="#">
+    <img width="144px" src="READMEimage/technology/sass-1.svg">
+  </a>
+</p>
 
-### `npm run eject`
+<h3 align="center">Libraries</h3>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<!--Libraries-->
+<p align="center">
+  <a href="#">
+    <img width="260px" src="READMEimage/technology/react.svg">
+  </a>
+</p>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<h3 align="center">Package manager</h4>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<!--Package manager-->
+<p align="center">
+  <a href="#">
+    <img width="144px" src="READMEimage/technology/npm.svg">
+  </a>
+</p>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+## Documentation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### The repository of this project is divided into several sections:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- `src` - this repository is intended for files with the help of which the project is being developed. It is from this repository that all project files are compiled;
+- `docs` - a repository that stores all compiled code with all media files;
 
-### Code Splitting
+#### The following describes in more detail the repository `src`:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+- `app` - this repository is divided into several folders and files:
 
-### Analyzing the Bundle Size
+  - `fonts` - folder is used to store fonts;
+  - `image` - all images for the site are stored in the folder;
+  - `components` - a repository where all site elements are distributed in modules and stored in separate files and folders;
+  - `screens` - it stores the files needed to build the project into a single whole by combining all the components of the site;
+  - `variables` - this repository stores global variables and arrays.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+- `public` - media files distributed by subgroups are stored inside this repository.
 
-### Making a Progressive Web App
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+#### This section describes how to work with `Create React App` used in the project:
 
-### Advanced Configuration
+- `npm run start` - this command starts the project from the local 'src' repository where you work on the entire product;
+- `serve -s build` - this command starts the project from the local 'build' repository where the finished and assembled project is located for release in production.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## Appearance
 
-### Deployment
+The image of the website:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+- Gif
+- Images in various screen formats
 
-### `npm run build` fails to minify
+#### Gif
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+  - Card hover
+  <a href="#"><img src="READMEimage/gif/cardHover.gif" /></a>
+
+  - Filter Provision
+  <a href="#"><img src="READMEimage/gif/filterProv.gif" /></a>
+
+  - Text Filter
+  <a href="#"><img src="READMEimage/gif/textFilter.gif" /></a>
+
+  - Filtering cards by properties
+  <a href="#"><img src="READMEimage/gif/leftFilterSide.gif" /></a>
+
+#### Desktop
+
+	- Full screen
+	<a href="#"><img src="READMEimage/screenImage/fullScreen.png" /></a>
+
+	- Screen less then 1815 px
+	<a href="#"><img src="READMEimage/screenImage/1815px.png" /></a>
+
+	- Screen less then 1740 px
+	<a href="#"><img src="READMEimage/screenImage/1740px.png" /></a>
+
+	- Screen less then 1530 px
+	<a href="#"><img src="READMEimage/screenImage/1530px.png" /></a>
+
+	- Screen less then 1415 px
+	<a href="#"><img src="READMEimage/screenImage/1415px.png" /></a>
+
+	- Screen less then 1240 px
+	<a href="#"><img src="READMEimage/screenImage/1240px.png" /></a>
+
+	- Screen less then 1048 px
+	<a href="#"><img src="READMEimage/screenImage/1048px.png" /></a>
+
+	- Screen less then 880 px
+	<a href="#"><img src="READMEimage/screenImage/880px.png" /></a>
