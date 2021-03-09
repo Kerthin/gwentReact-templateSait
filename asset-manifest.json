@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/gwentReact-templateSait/static/css/main.8df975b5.chunk.css",
+    "main.js": "/gwentReact-templateSait/static/js/main.76fe2c1f.chunk.js",
+    "main.js.map": "/gwentReact-templateSait/static/js/main.76fe2c1f.chunk.js.map",
+    "runtime-main.js": "/gwentReact-templateSait/static/js/runtime-main.878ea44b.js",
+    "runtime-main.js.map": "/gwentReact-templateSait/static/js/runtime-main.878ea44b.js.map",
+    "static/js/2.3241f22d.chunk.js": "/gwentReact-templateSait/static/js/2.3241f22d.chunk.js",
+    "static/js/2.3241f22d.chunk.js.map": "/gwentReact-templateSait/static/js/2.3241f22d.chunk.js.map",
+    "index.html": "/gwentReact-templateSait/index.html",
+    "precache-manifest.b83e2dbc564fb4fad2f21d354ce54abe.js": "/gwentReact-templateSait/precache-manifest.b83e2dbc564fb4fad2f21d354ce54abe.js",
+    "service-worker.js": "/gwentReact-templateSait/service-worker.js",
+    "static/css/main.8df975b5.chunk.css.map": "/gwentReact-templateSait/static/css/main.8df975b5.chunk.css.map",
+    "static/js/2.3241f22d.chunk.js.LICENSE.txt": "/gwentReact-templateSait/static/js/2.3241f22d.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/gwentReact-templateSait/static/media/preloader800x480.7462a59a.jpg",
+    "static/media/DeckItem.scss": "/gwentReact-templateSait/static/media/wildCard.82f61d3e.png",
+    "static/media/Header.scss": "/gwentReact-templateSait/static/media/foltest.10d6b448.png",
+    "static/media/FrontBlock.scss": "/gwentReact-templateSait/static/media/border.691f3752.png",
+    "static/media/Card.scss": "/gwentReact-templateSait/static/media/strategy.f82b2a91.png",
+    "static/media/Preloader.scss": "/gwentReact-templateSait/static/media/preloader1920x1200.9bc4d284.jpg",
+    "static/media/RadioButtonProvStart.scss": "/gwentReact-templateSait/static/media/provision.fb88f108.png",
+    "static/media/TypeFilterWrap.scss": "/gwentReact-templateSait/static/media/special.8f1729c3.png",
+    "static/media/FactionFilterWrap.scss": "/gwentReact-templateSait/static/media/syndicate.7f18ba8a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.878ea44b.js",
+    "static/js/2.3241f22d.chunk.js",
+    "static/css/main.8df975b5.chunk.css",
+    "static/js/main.76fe2c1f.chunk.js"
+  ]
+}
