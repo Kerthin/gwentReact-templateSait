@@ -8,7 +8,7 @@ function BorderFilterWrap(props) {
 	return(
 		<label className="sideFilterWrap">
 			<input type="checkbox" className="openFilter" />
-			<FrontBlock frontFilterIcon={'color'} frontFilterName={'Цвет'} />
+			<FrontBlock frontFilterIcon={'color'} frontFilterName={'Color'} />
 			<div className="popupFilter">
 				<RadioButton value={""} radioName={"border"} checked={props.checked} onChange={props.onChange} />
 				<RadioButton value={"gold"} radioName={"border"} checked={props.checked} onChange={props.onChange} />
