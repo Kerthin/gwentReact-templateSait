@@ -8,7 +8,7 @@ function FactionFilterWrap(props) {
 	return(
 		<label className="sideFilterWrap">
 			<input type="checkbox" className="openFilter" />
-			<FrontBlock frontFilterIcon={'faction'} frontFilterName={'Фракция'} />
+			<FrontBlock frontFilterIcon={'faction'} frontFilterName={'Fraction'} />
 			<div className="popupFilter">
 				<RadioButton value={""} radioName={"faction"} checked={props.checked} onChange={props.onChange} />
 				<RadioButton value={"neutral"} radioName={"faction"} checked={props.checked} onChange={props.onChange} />

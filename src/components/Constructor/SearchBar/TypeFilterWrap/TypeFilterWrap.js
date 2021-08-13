@@ -8,7 +8,7 @@ function TypeFilterWrap(props) {
 	return(
 		<label className="sideFilterWrap">
 			<input type="checkbox" className="openFilter" />
-			<FrontBlock frontFilterIcon={'type'} frontFilterName={'Тип карты'} />
+			<FrontBlock frontFilterIcon={'type'} frontFilterName={'Type'} />
 			<div className="popupFilter">
 				<RadioButton value={""} radioName={"type"} checked={props.checked} onChange={props.onChange} />
 				<RadioButton value={"unit"} radioName={"type"} checked={props.checked} onChange={props.onChange} />

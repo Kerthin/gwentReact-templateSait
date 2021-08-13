@@ -8,7 +8,7 @@ function CostFilterWrap(props) {
 	return(
 		<label className="sideFilterWrap">
 			<input type="checkbox" className="openFilter" />
-			<FrontBlock frontFilterIcon={'cost'} frontFilterName={'Стоимость'} />
+			<FrontBlock frontFilterIcon={'cost'} frontFilterName={'Cost'} />
 			<div className="popupFilter">
 				<CheckboxButton value={"usual"} checked={props.checkedUsual} onChange={props.onChangeUsual} />
 				<CheckboxButton value={"rare"} checked={props.checkedRare} onChange={props.onChangeRare} />
